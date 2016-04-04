@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Howard's Portfolio</title>
+    <!-- Lato font hosted by Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Bootstrap minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!--Bootstrap minified JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Simple Bootstrap Navbar -->
+            <!-- TODO: Fill up navbar with additional pages and proper linking, currently only Projects section is properly linked.  Also change the default Bootstrap navbar style. -->
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-bar" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">H.X.</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navigation-bar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="logo-svg img-responsive" src="images/yin-and-yang.svg" alt="Logo image">
+            </div>
+            <div class="col-md-6 text-right">
+                <h1 class="title-text">HOWARD XUE</h1>
+                <h4 class="text-heavy text-spacing">FRONT-END NINJA</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="divider">
+            </div>
+        </div>
+        <!-- Hero image, using picture element to choose image depending on device resolution. -->
+        <!-- TODO: Replace with more appropriate hero image later. -->
+        <div class="row">
+            <div class="col-md-12">
+                <figure>
+                    <picture>
+                        <source
+                            media="(min-width: 992px)"
+                            srcset="images/dog_large_2x.jpg 1x, images/dog_large_2x.jpg 2x">
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="images/dog_medium_1x.jpg 1x, images/dog_medium_2x.jpg 2x">
+                        <img class="img-responsive" src="images/dog_small.jpg"
+                            alt="Picture of a dog.">
+                    </picture>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-heavy text-spacing text-light featured" id="projects">Featured Work</h2>
+            </div>
+        </div>
+        <!-- TODO: Replace with actual projects images and links in the future -->
+        <div class="row text-heavy text-center">
+            <div class="col-sm-6 col-md-4">
+                <img class="img-responsive" src="images/bulb_small.jpg" alt="A bunch of onions.">
+                <h3 class="project-title">Project 1</h3>
+                <p class="project-link"><a href="#">Click Me</a></p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img class="img-responsive" src="images/desert_small.jpg" alt="Picture of a desert.">
+                <h3 class="project-title">Project 2</h3>
+                <p class="project-link"><a href="#">Click Me</a></p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img class="img-responsive" src="images/easter_small.jpg" alt="Glass easter bunnies.">
+                <h3 class="project-title">Project 3</h3>
+                <p class="project-link"><a href="#">Click Me</a></p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img class="img-responsive" src="images/landscape_small.jpg" alt="A nice landscape.">
+                <h3 class="project-title">Project 4</h3>
+                <p class="project-link"><a href="#">Click Me</a></p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img class="img-responsive" src="images/marble_small.jpg" alt="Picture of a marble cave.">
+                <h3 class="project-title">Project 5</h3>
+                <p class="project-link"><a href="#">Click Me</a></p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img class="img-responsive" src="images/nuts_small.jpg" alt="A bag of walnuts">
+                <h3 class="project-title">Project 6</h3>
+                <p class="project-link"><a href="#">Click Me</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="divider">
+            </div>
+        </div>
+        <!-- TODO: Simple footer, consider making it more complex down the line. -->
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <footer class="text-heavy">
+                    <p>Made by: Howard Xue @2016</p>
+                    <p>Udacity Web Development Nanodegree</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

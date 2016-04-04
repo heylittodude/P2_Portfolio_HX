@@ -1,0 +1,62 @@
+/* Default google font style. */
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #737373;
+}
+
+/* Setting images to 100% width to fill up the entired width of container. */
+img {
+    width: 100%;
+}
+
+.logo-svg {
+    width: 20%;
+    height: 20%;
+    margin-top: 10px;
+}
+
+/* divider styles, thicker and new color. */
+.divider {
+    height: 5px;
+    background-color: #bcbbbb;
+    margin-bottom: 30px;
+}
+
+/* Classes for text styles.  Changing size, weight, spacing and color accordingly. */
+.title-text {
+    font-size: 4em;
+    font-weight: 100;
+}
+
+.text-heavy {
+    font-weight: 800;
+}
+
+.text-light {
+    color: #ccc;
+}
+
+.text-spacing {
+    letter-spacing: 1px;
+}
+
+/* Classes with specific font styles for the feature work section. */
+.featured {
+    font-size: 35px;
+    margin: 30px 0 15px 0;
+}
+
+.project-title {
+    font-size: 40px;
+}
+
+.project-link {
+    font-size: 20px;
+}
+
+/* Simple footer styles. */
+footer {
+    font-size: 20px;
+    font-style: italic;
+}
